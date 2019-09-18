@@ -8,9 +8,9 @@ switch ($get) {
       case 'gamereg':
           include 'pages/game_registration.php';
           break;
-      // case '':
-      //     include 'pages/.php';
-      //     break;
+      case 'games':
+          include 'pages/games.php';
+          break;
       // case '':
       //     include 'pages/.php';
       //     break;

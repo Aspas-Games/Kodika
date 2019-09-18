@@ -6,12 +6,12 @@
   <nav>
     <ul class="nav nav-tabs justify-content-center nav-justified">
       <li class="nav-item">
-        <a class="nav-link active" href="?page=home">Home</a>
+        <a class="nav-link active" href="index.php?page=home">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Biblioteca</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Jogos</a>
+          <a class="dropdown-item" href="index.php?page=games">Jogos</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -25,7 +25,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administrador</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="?page=gamereg">Cadastrar Jogo</a>
+          <a class="dropdown-item" href="index.php?page=gamereg">Cadastrar Jogo</a>
           <a class="dropdown-item" href="#">Cadastrar Gênero</a>
         </div>
       </li>

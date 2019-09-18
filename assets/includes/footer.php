@@ -1,4 +1,4 @@
-<footer class="fixed-bottom">
+<footer>
   <div class="container">
     <hr>
     <h6 class="text-center">© 2019 Aspas Games. Todos os direitos reservados.</h6>
