@@ -7,9 +7,11 @@
     <meta name="author" content="Cycero Oliveira, Daniel Schardosin, Danilo Machado de Souza, Felipe Gustavo Pereira, Vitor Schoeller">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="media/css/bootstrap.css">
+    <link rel="stylesheet" href="media/css/datatables.css"/>
     <link rel="stylesheet" href="media/css/master.css">
     <script src="media/js/jquery-3.4.1.min.js"></script>
     <script src="media/js/popper.min.js"></script>
     <script src="media/js/bootstrap.js"></script>
+    <script src="media/js/datatables.js"></script>
   </head>
   <body>

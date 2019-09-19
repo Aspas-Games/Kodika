@@ -6,7 +6,7 @@ include 'assets/includes/nav.php';
 
 switch ($get) {
       case 'gamereg':
-          include 'pages/game_registration.php';
+          include 'pages/adm/list_games.php';
           break;
       case 'games':
           include 'pages/games.php';
