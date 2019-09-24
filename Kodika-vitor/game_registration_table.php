@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <<?php
+    <?php
     $arrayJogos = $_SESSION["jogosCadastrados"];
     foreach ($arrayJogos as $key => $jogo) {
       echo "<tr>";
@@ -14,7 +13,7 @@
       echo $jogo['titulo'];
       echo "</td>";
       echo "<td>";
-      echo $jogo['descrição'];
+      echo $jogo['descricao'];
       echo "</td>";
       echo "<td>";
       echo $jogo['desenvolvedora'];
