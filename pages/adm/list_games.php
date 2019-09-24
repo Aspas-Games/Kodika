@@ -4,7 +4,12 @@
     formatTable("#game-list");
   </script>
   <div class="container">
-    <h2>Jogos Cadastrados</h2>
+    <div class="container wrap-gamelist">
+      <h2>Jogos Cadastrados</h2>
+      <a href="game_registration.php" class="btn-gamereg">
+        <button class="btn btn-primary">Cadastrar Jogo</button>
+      </a>
+    </div>
     <table id="game-list">
       <thead>
         <tr>
@@ -14,280 +19,46 @@
           <th>Desenvolvedora</th>
           <th>Data de Lançamento</th>
           <th>Idiomas</th>
-          <th>Mídia</th>
+          <th>Ação</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th>15</th>
-          <td>15</td>
-          <td>15</td>
-          <td>15</td>
-          <td>15</td>
-          <td>15</td>
-          <td>15</td>
-        </tr>
+        <?php
+          include 'assets/includes/connect.php';
+          $query = sprintf("SELECT * FROM jogo");
+          $dados = mysqli_query($conexao, $query) or die(mysql_error());
+          $linha = mysqli_fetch_assoc($dados);
+          $total = mysqli_num_rows($dados);
+          if($total > 0) {
+            do {
+              ?>
+              <tr>
+                <td><?php echo ($linha['idjogo']);?></td>
+                <td><?php echo ($linha['titulo']);?></td>
+                <td><?php echo ($linha['descricao']);?></td>
+                <td><?php echo ($linha['desenvolvedora']);?></td>
+                <td><?php echo ($linha['data_lancamento']);?></td>
+                <td><?php echo ($linha['idiomas']);?></td>
+                <td>
+                  <a href="?pagina=editarJogo&id=<?php echo ($linha['idjogo']);?>&titulo=<?php echo ($linha['titulo']);?>&descricao=<?php echo ($linha['descricao']);?>&desenvolvedora=<?php echo ($linha['desenvolvedora']);?>&datalancamento=<?php echo ($linha['data_lancamento']); ?>&idiomas=<?php echo ($linha['idiomas']); ?>&midia=<?php echo ($linha['midia']); ?>">
+                    <button class="btn btn-primary">Editar</button>
+                  </a>
+                  <a href="excluir.php?id=<?php echo ($linha['idjogo']);?>">
+                    <button class="btn btn-primary">Excluir</button>
+                  </a>
+                </td>
+              </tr>
+              <?php
+            }while($linha = mysqli_fetch_assoc($dados));
+          } else {
+            ?>
+            <tr>
+              <td colspan="7">Nenhum jogo cadastrado.</td>
+            </tr>
+            <?php
+          }
+          mysqli_free_result($dados);
+        ?>
       </tbody>
     </table>
   </div>
