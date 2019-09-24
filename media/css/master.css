@@ -8,6 +8,9 @@
 .card-img {
   border-radius: 10px;
 }
-.wrap-gamelist {
-  
+.wrap-gamelist-title {
+  margin: 1% 0;
+}
+.btn-gamereg {
+  margin-left: 2%;
 }

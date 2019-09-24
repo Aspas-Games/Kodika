@@ -25,7 +25,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administrador</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="index.php?page=gamereg">Cadastrar Jogo</a>
+          <a class="dropdown-item" href="index.php?page=gamelist">Cadastrar Jogo</a>
           <a class="dropdown-item" href="#">Cadastrar Gênero</a>
         </div>
       </li>

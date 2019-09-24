@@ -5,8 +5,11 @@ include 'assets/includes/header.php';
 include 'assets/includes/nav.php';
 
 switch ($get) {
-      case 'gamereg':
+      case 'gamelist':
           include 'pages/adm/list_games.php';
+          break;
+      case 'gamereg':
+          include 'pages/adm/game_registration.php';
           break;
       case 'games':
           include 'pages/games.php';
