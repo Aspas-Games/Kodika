@@ -5,7 +5,7 @@ session_start();
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Celke - Reputacao com estrela</title>
+		<title>Reputacao com estrela</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="estilo.css">
 	</head>
@@ -20,24 +20,26 @@ session_start();
 		<form method="POST" action="processa.php" enctype="multipart/form-data">
 			<div class="estrelas">
 				<input type="radio" id="vazio" name="estrela" value="" checked>
-				
+
 				<label for="estrela_um"><i class="fa"></i></label>
-				<input type="radio" id="estrela_um" name="estrela" value="1">
-				
+				<input type="radio" id="estrela_um" name="estrela" value="1.5">
+
 				<label for="estrela_dois"><i class="fa"></i></label>
 				<input type="radio" id="estrela_dois" name="estrela" value="2">
-				
+
 				<label for="estrela_tres"><i class="fa"></i></label>
 				<input type="radio" id="estrela_tres" name="estrela" value="3">
-				
+
 				<label for="estrela_quatro"><i class="fa"></i></label>
 				<input type="radio" id="estrela_quatro" name="estrela" value="4">
-				
+
 				<label for="estrela_cinco"><i class="fa"></i></label>
 				<input type="radio" id="estrela_cinco" name="estrela" value="5"><br><br>
-				
+				<h4>Faça seu comentario sobre nosso produto !</h4>
+				<p><input type="text" id="coment" name="coment" size="40" maxlength="25" /></p>
+
 				<input type="submit" value="Cadastrar">
-				
+
 			</div>
 		</form>
 	</body>
