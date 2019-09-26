@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `jimmyJimmy`.`fase` (
   `dirChao` VARCHAR(50) NULL DEFAULT NULL,
   `jogo_idjogo` INT NOT NULL,
   PRIMARY KEY (`idfase`),
-  INDEX `fk_fase_jogo1_idx` (`jogo_idjogo` ASC) VISIBLE,
+  INDEX `fk_fase_jogo1_idx` (`jogo_idjogo` ASC),
   CONSTRAINT `fk_fase_jogo1`
     FOREIGN KEY (`jogo_idjogo`)
     REFERENCES `jimmyJimmy`.`jogo` (`idjogo`)
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `jimmyJimmy`.`usuario` (
   `max_ptos` INT NULL DEFAULT NULL,
   `idFase` INT NULL DEFAULT NULL,
   PRIMARY KEY (`idusuario`),
-  INDEX `fk_idFase` (`idFase` ASC) VISIBLE,
+  INDEX `fk_idFase` (`idFase` ASC),
   CONSTRAINT `fk_idFase`
     FOREIGN KEY (`idFase`)
     REFERENCES `jimmyJimmy`.`fase` (`idfase`))
@@ -92,8 +92,8 @@ CREATE TABLE IF NOT EXISTS `jimmyJimmy`.`jogo_has_genero` (
   `jogo_idjogo` INT NOT NULL,
   `genero_idgenero` INT NOT NULL,
   PRIMARY KEY (`jogo_idjogo`, `genero_idgenero`),
-  INDEX `fk_jogo_has_genero_genero1_idx` (`genero_idgenero` ASC) VISIBLE,
-  INDEX `fk_jogo_has_genero_jogo1_idx` (`jogo_idjogo` ASC) VISIBLE,
+  INDEX `fk_jogo_has_genero_genero1_idx` (`genero_idgenero` ASC),
+  INDEX `fk_jogo_has_genero_jogo1_idx` (`jogo_idjogo` ASC),
   CONSTRAINT `fk_jogo_has_genero_jogo1`
     FOREIGN KEY (`jogo_idjogo`)
     REFERENCES `jimmyJimmy`.`jogo` (`idjogo`)
@@ -118,8 +118,8 @@ CREATE TABLE IF NOT EXISTS `jimmyJimmy`.`comentario` (
   `jogo_idjogo` INT NOT NULL,
   `usuario_idusuario` INT NOT NULL,
   PRIMARY KEY (`idcomentario`),
-  INDEX `fk_comentario_jogo1_idx` (`jogo_idjogo` ASC) VISIBLE,
-  INDEX `fk_comentario_usuario1_idx` (`usuario_idusuario` ASC) VISIBLE,
+  INDEX `fk_comentario_jogo1_idx` (`jogo_idjogo` ASC),
+  INDEX `fk_comentario_usuario1_idx` (`usuario_idusuario` ASC),
   CONSTRAINT `fk_comentario_jogo1`
     FOREIGN KEY (`jogo_idjogo`)
     REFERENCES `jimmyJimmy`.`jogo` (`idjogo`)
