@@ -26,7 +26,7 @@
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administrador</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="index.php?page=gamelist">Cadastrar Jogo</a>
-          <a class="dropdown-item" href="#">Cadastrar Gênero</a>
+          <a class="dropdown-item" href="index.php?page=genrelist">Cadastrar Gênero</a>
         </div>
       </li>
     </ul>

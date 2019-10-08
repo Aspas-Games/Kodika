@@ -35,7 +35,7 @@
             <tr>
               <td><?php echo ($linha['idjogo']);?></td>
               <td><?php echo ($linha['titulo']);?></td>
-              <td><?php echo ($linha['descricao']);?></td>
+              <td><?php echo $linha['descricao'];?></td>
               <td><?php echo ($linha['desenvolvedora']);?></td>
               <td><?php echo ($linha['data_lancamento']);?></td>
               <td><?php echo ($linha['idiomas']);?></td>
@@ -54,6 +54,12 @@
           ?>
           <tr>
             <td colspan="7">Nenhum jogo cadastrado.</td>
+            <td style="display: none;"></td>
+            <td style="display: none;"></td>
+            <td style="display: none;"></td>
+            <td style="display: none;"></td>
+            <td style="display: none;"></td>
+            <td style="display: none;"></td>
           </tr>
           <?php
         }
