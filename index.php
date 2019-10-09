@@ -17,9 +17,9 @@ switch ($get) {
       case 'gamereg':
           include 'pages/adm/game_registration.php';
           break;
-      // case '':
-      //     include 'pages/.php';
-      //     break;
+      case 'editGame':
+          include 'pages/adm/game_edit.php';
+          break;
       default:
           include 'pages/home.php';
   }

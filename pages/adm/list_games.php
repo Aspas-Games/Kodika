@@ -40,10 +40,10 @@
               <td><?php echo ($linha['data_lancamento']);?></td>
               <td><?php echo ($linha['idiomas']);?></td>
               <td>
-                <a href="?pagina=editarJogo&id=<?php echo ($linha['idjogo']);?>&titulo=<?php echo ($linha['titulo']);?>&descricao=<?php echo ($linha['descricao']);?>&desenvolvedora=<?php echo ($linha['desenvolvedora']);?>&datalancamento=<?php echo ($linha['data_lancamento']); ?>&idiomas=<?php echo ($linha['idiomas']); ?>&midia=<?php echo ($linha['midia']); ?>">
+                <a href="?page=editGame&idjogo=<?php echo ($linha['idjogo']);?>&titulo=<?php echo ($linha['titulo']);?>&descricao=<?php echo ($linha['descricao']);?>&desenvolvedora=<?php echo ($linha['desenvolvedora']);?>&datalancamento=<?php echo ($linha['data_lancamento']); ?>&idiomas=<?php echo ($linha['idiomas']); ?>&midia=<?php echo ($linha['midia']); ?>">
                   <button class="btn btn-primary">Editar</button>
                 </a>
-                <a href="excluir.php?id=<?php echo ($linha['idjogo']);?>">
+                <a href="pages/form/delete_game.php?idjogo=<?php echo ($linha['idjogo']);?>">
                   <button class="btn btn-primary">Excluir</button>
                 </a>
               </td>
@@ -67,5 +67,17 @@
         ?>
       </tbody>
     </table>
+    <?php
+    if (isset($_GET['sucesso'])) {
+      $sucesso = $_GET['sucesso'];
+      if ($sucesso == 801) {
+        ?>
+        <script>
+          alert('Dados de jogo editados com sucesso.');
+        </script>
+        <?php
+      }
+    }
+    ?>
   </div>
 </main>
