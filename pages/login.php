@@ -2,18 +2,38 @@
   <div class="container">
     <div class="card loginBackground">
       <img src="media/img/logo_white.png" alt="logo kodika by aspas" class="logoLogin">
-      <form class="login-form" action="" method="post">
+      <form class="login-form" action="pages/form/login.php" method="post">
+        <?php
+        session_start();
+        if(isset($_SESSION['erro'])) {
+          $erro = $_SESSION['erro'];
+          switch ($erro) {
+            case '101':
+              $mensagem = 'Os campos precisam ser preenchidos corretamente.';
+              break;
+            case '102':
+              $mensagem = 'As informações preenchidas estão incorretas.';
+              break;
+          }
+          ?>
+          <div class="card login-card">
+            <h4><?php echo $mensagem; ?></h4>
+          </div>
+          <?php
+          unset($_SESSION['erro']);
+        }
+        ?>
         <div class="form-group login-input-wrap">
           <label class="login-input" for="user">Usuário:</label>
-          <input class="login-input" type="text" class="form-control" name="nickname">
+          <input class="login-input input-field" type="text" class="form-control" name="nickname">
         </div>
         <div class="form-group login-input-wrap">
           <label class="login-input" for="password">Senha:</label>
-          <input class="login-input" type="password" class="form-control" name="password">
+          <input class="login-input input-field" type="password" class="form-control" name="password">
         </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
+        <button type="submit" class="btn btn-primary login-btn">Entrar</button>
+        <a href="index.php?page=userreg" class="btn btn-primary login-btn">Cadastrar</a>
       </form>
-      <button type="submit" name="register" class="btn btn-primary">Cadastrar</button>
     </div>
   </div>
 </main>

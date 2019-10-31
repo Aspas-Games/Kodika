@@ -2,10 +2,10 @@
 $get = isset($_GET['page'])? $_GET['page']:'';
 
 include 'assets/includes/header.php';
-if (!$get == '') {
+if ($get == '' || $get == 'userreg') {
+} else {
   include 'assets/includes/nav.php';
 }
-
 
 switch ($get) {
       case 'gamelist':
@@ -23,8 +23,17 @@ switch ($get) {
       case 'editGame':
           include 'pages/adm/game_edit.php';
           break;
+      case 'home':
+          include 'pages/home.php';
+          break;
+      case 'userreg':
+          include 'pages/register.php';
+          break;
       default:
           include 'pages/login.php';
   }
 
-include 'assets/includes/footer.php';
+  if ($get == '' || $get == 'userreg') {
+  } else {
+    include 'assets/includes/footer.php';
+  }

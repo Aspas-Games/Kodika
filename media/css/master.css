@@ -1,15 +1,9 @@
 @font-face {
-    font-family: 'bignoodletitlingregular';
-    src: url('../../media/font/big_noodle_titling-webfont.woff2') format('woff2'),
-         url('../../media/font/big_noodle_titling-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-body {
-  background-image: linear-gradient(to bottom right, rgb(0,183,211), rgb(84,99,171));
-  background-repeat: no-repeat;
   font-family: 'bignoodletitlingregular';
+  src: url('../../media/font/big_noodle_titling-webfont.woff2') format('woff2'),
+       url('../../media/font/big_noodle_titling-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 .game-cover {
   margin: .5rem 0;
@@ -27,16 +21,23 @@ body {
 .btn-gamereg {
   margin-left: 2%;
 }
-html {
+html, main {
   height: 100%;
 }
-body {
-  min-height: 100%;
+body{
+  min-height: 90%;
+  background-image: linear-gradient(to bottom right, rgb(0,183,211), rgb(84,99,171));
+  background-repeat: no-repeat;
+  font-family: 'bignoodletitlingregular';
 }
 .loginBackground {
   background-color: transparent;
   width: 500px;
-  margin: 2ch auto;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .logoLogin {
   width: 220px;
@@ -45,23 +46,67 @@ body {
 }
 .login-input {
   display: inline-block;
-  font-size: 6ch;
+  font-size: 5ch;
   border: none;
-  color: rgb(0,183,211);
+  color: #1B9BC5;
+  margin: 0;
 }
 input:focus {
     outline: none;
-}
-.login-input input {
-
 }
 .login-input-wrap {
   border: 1px solid white;
   border-radius: 30px;
   background-color: white;
   padding: 3px 25px;
-  color: rgb(0,183,211);
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .login-form {
   margin: 1ch;
+}
+.login-btn {
+  color: white;
+  display: block;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 30px;
+  padding: 3px 25px;
+  width: 450px;
+  margin-bottom: 1rem;
+  font-size: 5ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-btn:hover, .login-btn:active {
+  background-color: white !important;
+  color: #1C9BC6 !important;
+  border-color: white !important;
+  cursor: pointer;
+}
+.login-btn:focus {
+  outline: none !important;
+}
+.login-card {
+  width: 300px;
+  border: 3px solid #f05151;
+  color: #f05151;
+  background-color: rgba(0,0,0,.25);
+  text-shadow: 0 0 2px #282828;
+  border-radius: 5px;
+  margin: 0 auto 2ch auto;
+  text-align: center;
+}
+.login-card h4 {
+  margin-bottom: 0;
+}
+.input-field-1 {
+  width: 310px;
+}
+.input-field-2, .input-field-3 {
+  width: 330px;
+}
+.input-field-4 {
+  width: 222px;
 }
