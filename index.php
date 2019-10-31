@@ -2,7 +2,10 @@
 $get = isset($_GET['page'])? $_GET['page']:'';
 
 include 'assets/includes/header.php';
-include 'assets/includes/nav.php';
+if (!$get == '') {
+  include 'assets/includes/nav.php';
+}
+
 
 switch ($get) {
       case 'gamelist':
@@ -21,7 +24,7 @@ switch ($get) {
           include 'pages/adm/game_edit.php';
           break;
       default:
-          include 'pages/home.php';
+          include 'pages/login.php';
   }
 
 include 'assets/includes/footer.php';

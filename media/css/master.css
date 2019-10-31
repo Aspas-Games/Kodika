@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'bignoodletitlingregular';
+    src: url('../../media/font/big_noodle_titling-webfont.woff2') format('woff2'),
+         url('../../media/font/big_noodle_titling-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+  background-image: linear-gradient(to bottom right, rgb(0,183,211), rgb(84,99,171));
+  background-repeat: no-repeat;
+  font-family: 'bignoodletitlingregular';
+}
 .game-cover {
   margin: .5rem 0;
   border-radius: 5px;
@@ -13,4 +26,42 @@
 }
 .btn-gamereg {
   margin-left: 2%;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+.loginBackground {
+  background-color: transparent;
+  width: 500px;
+  margin: 2ch auto;
+}
+.logoLogin {
+  width: 220px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.login-input {
+  display: inline-block;
+  font-size: 6ch;
+  border: none;
+  color: rgb(0,183,211);
+}
+input:focus {
+    outline: none;
+}
+.login-input input {
+
+}
+.login-input-wrap {
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+  padding: 3px 25px;
+  color: rgb(0,183,211);
+}
+.login-form {
+  margin: 1ch;
 }
