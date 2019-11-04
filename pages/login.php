@@ -9,10 +9,10 @@
           $erro = $_SESSION['erro'];
           switch ($erro) {
             case '101':
-              $mensagem = 'Os campos precisam ser preenchidos corretamente.';
+              $mensagem = 'Os campos estão vazios.';
               break;
             case '102':
-              $mensagem = 'As informações preenchidas estão incorretas.';
+              $mensagem = 'Informações incorretas.';
               break;
           }
           ?>
