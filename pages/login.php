@@ -12,7 +12,16 @@
               $mensagem = 'Os campos estão vazios.';
               break;
             case '102':
-              $mensagem = 'Informações incorretas.';
+              $mensagem = 'Campo de usuário não foi preenchido.';
+              break;
+            case '103':
+              $mensagem = 'Campo de senha não foi preenchido.';
+              break;
+            case '104':
+              $mensagem = 'Usuário não existente.';
+              break;
+            case '105':
+              $mensagem = 'Senha incorreta.';
               break;
           }
           ?>
@@ -25,7 +34,7 @@
         ?>
         <div class="form-group login-input-wrap">
           <label class="login-input" for="user">Usuário:</label>
-          <input class="login-input input-field" type="text" class="form-control" name="nickname">
+          <input class="login-input input-field" type="text" class="form-control" name="user">
         </div>
         <div class="form-group login-input-wrap">
           <label class="login-input" for="password">Senha:</label>
