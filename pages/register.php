@@ -26,13 +26,33 @@
             case '206':
               $mensagem = 'As senhas não coincidem.';
               break;
+            case '207':
+              $mensagem = 'E-mail já cadastrado.';
+              break;
+            case '208':
+              $mensagem = 'Usuário já cadastrado.';
+              break;
           }
           ?>
-          <div class="card login-card">
+          <div class="card login-card login-card-error">
             <h4><?php echo $mensagem; ?></h4>
           </div>
           <?php
           unset($_SESSION['erro']);
+        }
+        if (isset($_SESSION['sucesso'])) {
+          $sucesso = $_SESSION['sucesso'];
+          switch ($sucesso) {
+            case '101':
+                $mensagem = 'Cadastro realizado com sucesso! Faça login <a href="index.php" class="link-cadastro">AQUI</a>.';
+              break;
+          }
+          ?>
+          <div class="card login-card login-card-success">
+            <h4><?php echo $mensagem; ?></h4>
+          </div>
+          <?php
+          unset($_SESSION['sucesso']);
         }
         ?>
         <div class="form-group login-input-wrap">

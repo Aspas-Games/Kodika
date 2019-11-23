@@ -25,7 +25,7 @@
               break;
           }
           ?>
-          <div class="card login-card">
+          <div class="card login-card login-card-error">
             <h4><?php echo $mensagem; ?></h4>
           </div>
           <?php
