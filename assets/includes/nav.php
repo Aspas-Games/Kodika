@@ -1,34 +1,29 @@
-<header>
-  <div class="container">
-    <h1 class="text-center">Kodika</h1>
-    <h6 class="text-center">by Aspas Games</h6>
+<header class="row">
+  <div class="container col">
+    <h1 class="kodika logo">Kodika</h1>
+    <h6 class="by-aspas logo">by Aspas</h6>
   </div>
-  <nav>
-    <ul class="nav nav-tabs justify-content-center nav-justified">
+  <nav class="col">
+    <ul class="nav justify-content-end navbar">
       <li class="nav-item">
-        <a class="nav-link active" href="index.php?page=home">Home</a>
+        <a class="nav-link <?php if ($get == 'home') { echo 'current-page'; } ?>" href="index.php?page=home">Home</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Biblioteca</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="index.php?page=games">Jogos</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Meus Jogos</a>
+      </li>
+      <div class="dropdown">
+        <a class="nav-link nav-item dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="" role="button">Perfil</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item nav-link" href="assets/includes/logout.php">Logout</a>
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Perfil</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Visualizar Perfil</a>
-          <a class="dropdown-item" href="#">Editar seus dados</a>
-          <a class="dropdown-item" href="#">Logout</a>
+      </div>
+      <div class="dropdown">
+        <a class="nav-link nav-item dropdown-toggle <?php switch ($get) { case 'gamelist': case 'genrelist': case 'gamereg': case 'genrereg': case 'editgame': echo 'current-page'; } ?>" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="" role="button">Adm</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item nav-link" href="index.php?page=gamelist">Jogos Cadastrados</a>
+          <a class="dropdown-item nav-link" href="index.php?page=genrelist">Gêneros Cadastrados</a>
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Administrador</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="index.php?page=gamelist">Cadastrar Jogo</a>
-          <a class="dropdown-item" href="index.php?page=genrelist">Cadastrar Gênero</a>
-        </div>
-      </li>
+      </div>
     </ul>
   </nav>
 </header>

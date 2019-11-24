@@ -1,3 +1,6 @@
+<?php
+include 'assets/includes/user_validation.php';
+?>
 <main>
   <div class="container">
     <h2 class="text-center">Sobre nós</h2>

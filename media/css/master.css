@@ -125,3 +125,31 @@ input:focus {
 .link-cadastro:hover, .link-cadastro:active {
   color: rgba(75, 181, 67, 1);
 }
+header {
+  background-color: black;
+}
+.kodika {
+  font-size: 15ch;
+}
+.logo {
+  display: inline-block;
+  color: white;
+}
+.nav-link {
+  color: white;
+  font-size: 8ch;
+}
+.current-page, .nav-link:hover, .nav-link:active {
+  color: black;
+  background-color: white;
+}
+.nav-link:hover, .nav-link:active {
+  transition: .2s;
+}
+.navbar {
+  margin-top: 3.4ch;
+  padding-bottom: 0 !important;
+}
+.dropdown-menu {
+  background-color: black;
+}

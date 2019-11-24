@@ -39,6 +39,8 @@ if (empty($_POST['user']) && empty($_POST['password'])) {
 
     if (!empty($linhaPass)) {
       //Senha correta
+      $_SESSION['login'] = $user;
+      echo 'Logado';
       header('Location: ../../index.php?page=home');
     } else {
       //Senha incorreta
