@@ -8,9 +8,14 @@ if ($get == '' || $get == 'userreg') {
 }
 
 switch ($get) {
+  //Páginas de usuário
   case 'home':
     include 'pages/home.php';
     break;
+  case 'mygames':
+    include 'pages/games.php';
+    break;
+  //Páginas de Administrador
   case 'gamelist':
     include 'pages/adm/list_games.php';
     break;
@@ -26,10 +31,25 @@ switch ($get) {
   case 'editGame':
     include 'pages/adm/game_edit.php';
     break;
+  //Páginas de login e registro
   case 'userreg':
+    ?>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom right, rgb(0,183,211), rgb(84,99,171));
+      }
+    </style>
+    <?php
     include 'pages/register.php';
     break;
   default:
+    ?>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom right, rgb(0,183,211), rgb(84,99,171));
+      }
+    </style>
+    <?php
     include 'pages/login.php';
 }
 

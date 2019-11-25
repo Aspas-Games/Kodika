@@ -1,28 +1,19 @@
+<?php
+include 'assets/includes/user_validation.php';
+?>
 <main>
-  <div class="container">
+  <div class="container container-kodika">
     <div class="row">
-      <div class="card text-white col game-cover">
-        <img src="media/img/capa_placeholder.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-      </div>
-      <div class="card text-white col game-cover">
-        <img src="media/img/capa_placeholder.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-      </div>
-      <div class="card text-white col game-cover">
-        <img src="media/img/capa_placeholder.png" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
+      <h2 class="text-center subtitulo-kodika col">Meus Jogos:</h2>
+    </div>
+    <div class="row games-row">
+      <div class="game col">
+        <img class="game-image" src="media/img/jimmy-jimmy.jpg">
+        <div class="game-bottom">
+          <h3 class="game-title">Jimmy Jimmy</h3>
+          <p class="game-dev">Desenvolvido por: Aspas Games</p>
+          <p class="game-genre">Gênero: Ação, Aventura</p>
+          <button type="button" class="game-button">Jogar</button>
         </div>
       </div>
     </div>

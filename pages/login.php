@@ -1,14 +1,10 @@
-<?php
-if (isset($_SESSION['login'])) {
-  header('Location: index.php?page=home');
-}
-?>
 <main>
   <div class="container">
     <div class="card loginBackground">
       <img src="media/img/logo_white.png" alt="logo kodika by aspas" class="logoLogin">
       <form class="login-form" action="pages/form/login.php" method="post">
         <?php
+        session_start();
         if(isset($_SESSION['erro'])) {
           $erro = $_SESSION['erro'];
           switch ($erro) {

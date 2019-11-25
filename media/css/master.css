@@ -5,28 +5,11 @@
   font-weight: normal;
   font-style: normal;
 }
-.game-cover {
-  margin: .5rem 0;
-  border-radius: 5px;
-}
-.card {
-  border: none;
-}
-.card-img {
-  border-radius: 10px;
-}
-.wrap-gamelist-title {
-  margin: 1% 0;
-}
-.btn-gamereg {
-  margin-left: 2%;
-}
 html, main {
   height: 100%;
 }
 body{
   min-height: 90%;
-  background-image: linear-gradient(to bottom right, rgb(0,183,211), rgb(84,99,171));
   background-repeat: no-repeat;
   font-family: 'bignoodletitlingregular';
 }
@@ -131,6 +114,9 @@ header {
 .kodika {
   font-size: 15ch;
 }
+.by-aspas {
+  font-size: 8ch;
+}
 .logo {
   display: inline-block;
   color: white;
@@ -152,4 +138,72 @@ header {
 }
 .dropdown-menu {
   background-color: black;
+}
+.container-navbar {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.image-home {
+  display: block;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+.divider-home {
+  border: 4px solid white;
+  width: 350px;
+}
+.container-kodika {
+  max-width: 1366px;
+  margin: 2% auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  background-image: linear-gradient(to bottom right, rgb(0,183,211), rgb(84,99,171));
+}
+.subtitulo-kodika {
+  color: white;
+  font-size: 13ch;
+}
+.games-row {
+  width: 90%;
+  margin: 0 auto;
+}
+.game {
+  padding: 0;
+  max-width: 350px;
+  width: 350px;
+}
+.game-image {
+  width: 350px;
+}
+.game-bottom {
+  background-color: white;
+  padding-bottom: 40px;
+}
+.game-title {
+  font-size: 8ch;
+  padding: 0;
+  margin: 0 0 0 3%;
+}
+.game-dev, .game-genre {
+  font-size: 3.5ch;
+  padding: 0;
+  margin: 0 0 0 3%;
+}
+.game-button {
+  background-color: black;
+  color: white;
+  border: none;
+  position: absolute;
+  transform: rotateZ(-90deg);
+  right: 0;
+  bottom: 24px;
+  font-size: 10ch;
+  padding: 0 15px;
+  box-shadow: 2px 0px 0 2px black;
+}
+.game-button:hover {
+  box-shadow: 2px 0px 0 2px black;
+  color: black;
+  background-color: white;
+  transition: .25s;
 }
