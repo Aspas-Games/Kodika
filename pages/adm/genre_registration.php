@@ -1,5 +1,5 @@
 <main>
-  <div class="container">
+  <div class="container container-kodika">
     <h2>Cadastro de Gênero</h2>
     <form action="pages/form/genre_reg.php" method="post">
       <div class="form-group">

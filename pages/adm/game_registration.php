@@ -1,5 +1,5 @@
 <main>
-  <div class="container">
+  <div class="container container-kodika">
     <h2>Cadastro de Jogo</h2>
     <form method="post" action="pages/form/game_reg.php">
       <div class="row">

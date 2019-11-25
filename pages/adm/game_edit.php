@@ -5,7 +5,7 @@
       $_SESSION['idjogo'] = $_GET['idjogo'];
     }
   ?>
-  <div class="container">
+  <div class="container container-kodika">
     <h2>Alteração de dados do Jogo</h2>
     <form method="post" action="pages/form/game_edit_sql.php">
       <div class="row">

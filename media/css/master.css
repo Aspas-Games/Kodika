@@ -21,6 +21,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: none;
 }
 .logoLogin {
   width: 220px;
@@ -163,6 +164,10 @@ header {
   color: white;
   font-size: 13ch;
 }
+.status-kodika {
+  color: white;
+  font-size: 7ch;
+}
 .games-row {
   width: 90%;
   margin: 0 auto;
@@ -171,6 +176,7 @@ header {
   padding: 0;
   max-width: 350px;
   width: 350px;
+  margin: 0 auto;
 }
 .game-image {
   width: 350px;
@@ -206,4 +212,41 @@ header {
   color: black;
   background-color: white;
   transition: .25s;
+}
+button.btn.btn-primary {
+  color: black;
+  padding: 0;
+  font-size: 5ch;
+  width: 12rem;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 0;
+}
+button.btn.btn-primary:hover, button.btn.btn-primary:active {
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
+}
+.wrap-gamelist-title a {
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+.wrap-gamelist-title a:hover, .wrap-gamelist-title a:active {
+  text-decoration: none;
+  color: white;
+}
+.table-cell {
+  color: white;
+  font-size: 4ch;
+  font-weight: normal;
+}
+.table-cell-even {
+  background-color: rgba(255, 255, 255, .1);
+}
+.table-cell-odd {
+  background-color: rgba(255, 255, 255, .2);
+}
+.dataTables_wrapper, .dataTables_wrapper label, .dataTables_wrapper .dataTables_info {
+  color: white;
+  font-size: 3ch;
 }

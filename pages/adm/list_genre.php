@@ -3,19 +3,19 @@
   <?php include 'media/js/formatTable.js' ?>
   formatTable("#genre-list");
   </script>
-  <div class="container">
+  <div class="container container-kodika">
     <div class="container wrap-gamelist">
       <div class="row wrap-gamelist-title">
-        <h2 class="d-flex justify-content-start">Gêneros Cadastrados</h2>
+        <h2 class="d-flex justify-content-start status-kodika">Gêneros Cadastrados</h2>
         <a href="index.php?page=genrereg" class="btn-gamereg d-flex justify-content-start"><button class="btn btn-primary">Cadastrar Gênero</button></a>
       </div>
     </div>
-    <table id="genre-list">
+    <table id="genre-list" class="table">
       <thead>
         <tr>
-          <th>#</th>
-          <th>Título</th>
-          <th>Ações</th>
+          <th class="table-cell table-cell-odd">#</th>
+          <th class="table-cell table-cell-even">Título</th>
+          <th class="table-cell table-cell-odd">Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -29,9 +29,9 @@
           do {
             ?>
             <tr>
-              <td><?php echo ($linha['idgenero']);?></td>
-              <td><?php echo ($linha['titulo']);?></td>
-              <td>
+              <td class="table-cell table-cell-odd"><?php echo ($linha['idgenero']);?></td>
+              <td class="table-cell table-cell-even"><?php echo ($linha['titulo']);?></td>
+              <td class="table-cell table-cell-odd">
                 <a href="?pagina=editarGenero&id=<?php echo ($linha['idgenero']);?>&titulo=<?php echo ($linha['titulo']);?>">
                   <button class="btn btn-primary">Editar</button>
                 </a>
@@ -45,9 +45,9 @@
         } else {
           ?>
           <tr>
-            <td colspan="3">Nenhum gênero cadastrado.</td>
-            <td style="display: none;"></td>
-            <td style="display: none;"></td>
+            <td colspan="3" class="status-kodika">Nenhum gênero cadastrado.</td>
+            <td style="display: none;" class="table-cell"></td>
+            <td style="display: none;" class="table-cell"></td>
           </tr>
           <?php
         }
