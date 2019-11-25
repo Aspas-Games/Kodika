@@ -1,4 +1,5 @@
 <?php
+include 'assets/includes/user_validation.php';
 include 'assets/includes/connect.php';
 $query = sprintf("SELECT * FROM jogo");
 $dados = mysqli_query($conexao, $query) or die(mysql_error());
@@ -20,7 +21,7 @@ if ($total > 0) {
   } while ($linha = mysqli_fetch_assoc($dados));
 } else {
   ?>
-    <h2 class="status-kodika">Nenhum jogo cadastrado.</h2>
+    <h2 class="status-kodika">Nenhum jogo na biblioteca.</h2>
   <?php
 }
 mysqli_free_result($dados);

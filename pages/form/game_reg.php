@@ -1,4 +1,5 @@
 <?php
+include 'assets/includes/adm_validation.php';
 if (isset($_POST['title']) && isset($_POST['description']) && isset($_POST['developer']) && isset($_POST['release_date']) && isset($_POST['languages']) && isset($_POST['media'])) {
   $title = $_POST['title'];
   $developer = $_POST['developer'];

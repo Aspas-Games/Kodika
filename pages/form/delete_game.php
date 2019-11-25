@@ -1,4 +1,5 @@
 <?php
+  include 'assets/includes/adm_validation.php';
   include '../../assets/includes/connect.php';
 
   if (isset($_GET['idjogo'])) {

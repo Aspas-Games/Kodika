@@ -1,3 +1,6 @@
+<?php
+include 'assets/includes/adm_validation.php';
+?>
 <main>
   <script>
   <?php include 'media/js/formatTable.js' ?>
@@ -7,7 +10,7 @@
     <div class="container wrap-gamelist">
       <div class="row wrap-gamelist-title">
         <h2 class="d-flex justify-content-start status-kodika">Gêneros Cadastrados</h2>
-        <a href="index.php?page=genrereg" class="btn-gamereg d-flex justify-content-start"><button class="btn btn-primary">Cadastrar Gênero</button></a>
+        <a href="index.php?page=genrereg" class="d-flex justify-content-start"><button class="btn btn-primary btn-gamereg">Cadastrar Gênero</button></a>
       </div>
     </div>
     <table id="genre-list" class="table">
@@ -32,11 +35,11 @@
               <td class="table-cell table-cell-odd"><?php echo ($linha['idgenero']);?></td>
               <td class="table-cell table-cell-even"><?php echo ($linha['titulo']);?></td>
               <td class="table-cell table-cell-odd">
-                <a href="?pagina=editarGenero&id=<?php echo ($linha['idgenero']);?>&titulo=<?php echo ($linha['titulo']);?>">
-                  <button class="btn btn-primary">Editar</button>
+                <a class="a-edit" href="?pagina=editarGenero&id=<?php echo ($linha['idgenero']);?>&titulo=<?php echo ($linha['titulo']);?>">
+                  <button class="btn btn-primary btn-edit"></button>
                 </a>
-                <a href="excluir.php?id=<?php echo ($linha['idgenero']);?>">
-                  <button class="btn btn-primary">Excluir</button>
+                <a class="a-edit" href="excluir.php?id=<?php echo ($linha['idgenero']);?>">
+                  <button class="btn btn-primary btn-delete"></button>
                 </a>
               </td>
             </tr>
