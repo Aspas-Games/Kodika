@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `jimmyJimmy`.`usuario` (
   `idusuario` INT NOT NULL AUTO_INCREMENT,
   `nick` VARCHAR(30) NOT NULL,
   `email` VARCHAR(40) NOT NULL,
-  `senha` VARCHAR(30) NOT NULL,
+  `senha` VARCHAR(255) NOT NULL,
   `nome_fase` VARCHAR(30) NULL DEFAULT NULL,
   `max_ptos` INT NULL DEFAULT NULL,
   `idFase` INT NULL DEFAULT NULL,
