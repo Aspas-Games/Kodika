@@ -1,5 +1,4 @@
 <?php
-include 'assets/includes/user_validation.php';
 include 'assets/includes/connect.php';
 $query = sprintf("SELECT * FROM jogo");
 $dados = mysqli_query($conexao, $query) or die(mysql_error());
@@ -9,7 +8,9 @@ if ($total > 0) {
   do {
     ?>
     <div class="game col">
-      <img class="game-image" src="<?php echo ($linha['midia']);?>">
+      <a href="index.php?page=gamedetails">
+        <img class="game-image" src="<?php echo ($linha['midia']);?>">
+      </a>
       <div class="game-bottom">
         <h3 class="game-title"><?php echo ($linha['titulo']);?></h3>
         <p class="game-dev">Desenvolvido por: <?php echo ($linha['desenvolvedora']);?></p>

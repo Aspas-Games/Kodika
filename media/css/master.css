@@ -134,15 +134,18 @@ header {
   transition: .2s;
 }
 .navbar {
-  margin-top: 3.4ch;
+  margin-top: 4.7ch;
   padding-bottom: 0 !important;
 }
 .dropdown-menu {
   background-color: black;
 }
 .container-navbar {
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 0 auto;
+}
+.container-nav-inside {
+  padding: 0;
 }
 .image-home {
   display: block;
@@ -154,7 +157,7 @@ header {
   width: 350px;
 }
 .container-kodika {
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 2% auto;
   padding-top: 1%;
   padding-bottom: 2%;
@@ -296,4 +299,62 @@ input.btn.btn-info.btn-gamereg:hover, input.btn.btn-info.btn-gamereg:active {
 }
 .btn-delete:hover, .btn-delete:active {
   background-image: url('../../media/img/trash-bin-white.png');
+}
+.container-game-details {
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.image-game-details {
+  width: 300px;
+  height: 300px;
+}
+.titulo-game-details, .desc-game-details, .text-game-details, .coment-game-details {
+  color: white;
+}
+.titulo-game-details {
+  font-size: 13ch;
+  padding: 0;
+}
+.desc-game-details {
+  font-size: 5ch;
+  margin-bottom: 1.5rem;
+}
+.text-game-details {
+  font-size: 3.5ch;
+  padding: 0;
+  margin: 0;
+}
+.coment-game-details {
+  font-size: 6ch;
+  margin: 1.5rem 0 .3rem 0;
+}
+.autor-comentario, .comentario {
+  color: black;
+  padding: 0;
+  margin: 0 0 0 1rem;
+}
+.comentario {
+  font-size: 5ch;
+}
+.autor-comentario {
+  font-size: 3ch;
+}
+.container-coment {
+  background-color: white;
+  max-width: 400px;
+  padding: 1rem 0;
+}
+.btn-game-details {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.estrelas input[type=radio]{
+	display: none;
+}.estrelas label i.fa:before{
+	content: '\f005';
+	color: #FC0;
+}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+	color: #CCC;
 }
