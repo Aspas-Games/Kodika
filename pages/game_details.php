@@ -29,8 +29,8 @@ $total = mysqli_num_rows($dados);
           </div>
         </div>
         <div class="col">
-          <a href="index.php?page=comentgame"><button type="button" class="btn btn-primary btn-gamereg btn-game-details">Comentar</button></a>
-          <a href="index.php?page=mygames"><button type="button" class="btn btn-primary btn-gamereg btn-game-details">Voltar</button></a>
+          <a href="index.php?page=comentgame"><button type="button" class="btn btn-primary btn-gamereg btn-game-details btn-game-coment">Comentar</button></a>
+          <a href="index.php?page=mygames"><button type="button" class="btn btn-primary btn-gamereg btn-game-details btn-game-back">Voltar</button></a>
         </div>
       </div>
     </div>

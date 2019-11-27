@@ -350,11 +350,12 @@ input.btn.btn-info.btn-gamereg:hover, input.btn.btn-info.btn-gamereg:active {
   bottom: 0;
   right: 0;
 }
-.estrelas input[type=radio]{
-	display: none;
-}.estrelas label i.fa:before{
-	content: '\f005';
-	color: #FC0;
-}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
-	color: #CCC;
+.btn-game-back {
+  border-top-color: black !important;
+  border-top-width: 1px !important;
+}
+.btn-game-coment {
+  bottom: 49px;
+  border-bottom-color: black !important;
+  border-bottom-width: 1px !important;
 }
