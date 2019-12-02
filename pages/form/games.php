@@ -8,7 +8,9 @@ if ($total > 0) {
   do {
     ?>
     <div class="game col">
-      <img class="game-image" src="<?php echo ($linha['midia']);?>">
+      <a href="index.php?page=gamedetails">
+        <img class="game-image" src="<?php echo ($linha['midia']);?>">
+      </a>
       <div class="game-bottom">
         <h3 class="game-title"><?php echo ($linha['titulo']);?></h3>
         <p class="game-dev">Desenvolvido por: <?php echo ($linha['desenvolvedora']);?></p>
@@ -20,7 +22,7 @@ if ($total > 0) {
   } while ($linha = mysqli_fetch_assoc($dados));
 } else {
   ?>
-    <h2 class="status-kodika">Nenhum jogo cadastrado.</h2>
+    <h2 class="status-kodika">Nenhum jogo na biblioteca.</h2>
   <?php
 }
 mysqli_free_result($dados);

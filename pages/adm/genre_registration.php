@@ -1,13 +1,16 @@
+<?php
+include 'assets/includes/adm_validation.php';
+?>
 <main>
   <div class="container container-kodika">
     <h2>Cadastro de Gênero</h2>
     <form action="pages/form/genre_reg.php" method="post">
-      <div class="form-group">
+      <div class="form-group form-kodika">
         <label for="title">Título</label>
         <input type="text" class="form-control" name="title" placeholder="Título do Gênero...">
       </div>
-      <div class="form-group">
-        <input type="submit" value="Registrar" class="btn btn-info">
+      <div class="form-group form-kodika">
+        <input type="submit" value="Registrar" class="btn btn-info btn-gamereg">
       </div>
     </form>
     <?php

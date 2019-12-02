@@ -1,3 +1,6 @@
+<?php
+include 'assets/includes/adm_validation.php';
+?>
 <main>
   <script>
   <?php include 'media/js/formatTable.js' ?>
@@ -7,7 +10,7 @@
     <div class="container wrap-gamelist">
       <div class="row wrap-gamelist-title">
         <h2 class="d-flex justify-content-start status-kodika">Jogos Cadastrados</h2>
-        <a href="index.php?page=gamereg" class="btn-gamereg d-flex justify-content-start"><button class="btn btn-primary">Cadastrar Jogo</button></a>
+        <a href="index.php?page=gamereg" class="d-flex justify-content-start"><button class="btn btn-primary btn-gamereg">Cadastrar Jogo</button></a>
       </div>
     </div>
     <table id="game-list" class="table">
@@ -40,11 +43,11 @@
               <td class="table-cell table-cell-odd"><?php echo ($linha['data_lancamento']);?></td>
               <td class="table-cell"><?php echo ($linha['idiomas']);?></td>
               <td class="table-cell table-cell-odd">
-                <a href="?page=editGame&idjogo=<?php echo ($linha['idjogo']);?>&titulo=<?php echo ($linha['titulo']);?>&descricao=<?php echo ($linha['descricao']);?>&desenvolvedora=<?php echo ($linha['desenvolvedora']);?>&datalancamento=<?php echo ($linha['data_lancamento']); ?>&idiomas=<?php echo ($linha['idiomas']); ?>&midia=<?php echo ($linha['midia']); ?>">
-                  <button class="btn btn-primary">Editar</button>
+                <a class="a-edit" href="?page=editGame&idjogo=<?php echo ($linha['idjogo']);?>&titulo=<?php echo ($linha['titulo']);?>&descricao=<?php echo ($linha['descricao']);?>&desenvolvedora=<?php echo ($linha['desenvolvedora']);?>&datalancamento=<?php echo ($linha['data_lancamento']); ?>&idiomas=<?php echo ($linha['idiomas']); ?>&midia=<?php echo ($linha['midia']); ?>">
+                  <button class="btn btn-primary btn-edit"></button>
                 </a>
-                <a href="pages/form/delete_game.php?idjogo=<?php echo ($linha['idjogo']);?>">
-                  <button class="btn btn-primary">Excluir</button>
+                <a class="a-edit" href="pages/form/delete_game.php?idjogo=<?php echo ($linha['idjogo']);?>">
+                  <button class="btn btn-primary btn-delete"></button>
                 </a>
               </td>
             </tr>

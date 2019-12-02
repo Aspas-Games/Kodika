@@ -1,11 +1,11 @@
 <header>
   <div class="row container-navbar">
-    <div class="container col">
+    <div class="container col-4 container-nav-inside">
       <h1 class="kodika logo">Kodika</h1>
       <h6 class="by-aspas logo">by Aspas</h6>
     </div>
-    <nav class="col">
-      <ul class="nav justify-content-end navbar">
+    <nav class="col-8 container-nav-inside">
+      <ul class="nav justify-content-end navbar container-nav-inside">
         <li class="nav-item">
           <a class="nav-link <?php if ($get == 'home') { echo 'current-page'; } ?>" href="index.php?page=home">Home</a>
         </li>

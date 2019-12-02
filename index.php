@@ -15,6 +15,9 @@ switch ($get) {
   case 'mygames':
     include 'pages/games.php';
     break;
+  case 'gamedetails':
+    include 'pages/game_details.php';
+    break;
   //Páginas de Administrador
   case 'gamelist':
     include 'pages/adm/list_games.php';

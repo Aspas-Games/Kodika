@@ -134,15 +134,18 @@ header {
   transition: .2s;
 }
 .navbar {
-  margin-top: 3.4ch;
+  margin-top: 4.7ch;
   padding-bottom: 0 !important;
 }
 .dropdown-menu {
   background-color: black;
 }
 .container-navbar {
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 0 auto;
+}
+.container-nav-inside {
+  padding: 0;
 }
 .image-home {
   display: block;
@@ -154,7 +157,7 @@ header {
   width: 350px;
 }
 .container-kodika {
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 2% auto;
   padding-top: 1%;
   padding-bottom: 2%;
@@ -213,7 +216,7 @@ header {
   background-color: white;
   transition: .25s;
 }
-button.btn.btn-primary {
+button.btn.btn-primary.btn-gamereg {
   color: black;
   padding: 0;
   font-size: 5ch;
@@ -222,7 +225,7 @@ button.btn.btn-primary {
   border: 2px solid white;
   border-radius: 0;
 }
-button.btn.btn-primary:hover, button.btn.btn-primary:active {
+button.btn.btn-primary.btn-gamereg:hover, button.btn.btn-primary.btn-gamereg:active {
   background-color: black !important;
   color: white !important;
   border-color: white !important;
@@ -249,4 +252,110 @@ button.btn.btn-primary:hover, button.btn.btn-primary:active {
 .dataTables_wrapper, .dataTables_wrapper label, .dataTables_wrapper .dataTables_info {
   color: white;
   font-size: 3ch;
+}
+.form-kodika {
+  color: white;
+  font-size: 4.5ch;
+}
+.form-kodika input, .form-kodika textarea {
+  font-size: 2.5ch;
+}
+input.btn.btn-info.btn-gamereg {
+  font-size: 3ch;
+  background-color: black;
+  border: 2px solid black;
+  padding: 0 5px;
+}
+input.btn.btn-info.btn-gamereg:hover, input.btn.btn-info.btn-gamereg:active {
+  background-color: white;
+  color: black;
+}
+.page-item.active .page-link {
+  background-color: black;
+  border-color: black;
+}
+.a-edit:hover {
+  text-decoration: none !important;
+}
+.btn-edit, .btn-delete {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 15px;
+  background-color: white;
+  border-color: white;
+}
+.btn-edit:hover, .btn-delete:hover, .btn-edit:active, .btn-delete:active {
+  background-color: black !important;
+  border-color: black !important;
+}
+.btn-edit {
+  background-image: url('../../media/img/pencil-black.png');
+}
+.btn-edit:hover, .btn-edit:active {
+  background-image: url('../../media/img/pencil-white.png');
+}
+.btn-delete {
+  background-image: url('../../media/img/trash-bin-black.png');
+}
+.btn-delete:hover, .btn-delete:active {
+  background-image: url('../../media/img/trash-bin-white.png');
+}
+.container-game-details {
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.image-game-details {
+  width: 300px;
+  height: 300px;
+}
+.titulo-game-details, .desc-game-details, .text-game-details, .coment-game-details {
+  color: white;
+}
+.titulo-game-details {
+  font-size: 13ch;
+  padding: 0;
+}
+.desc-game-details {
+  font-size: 5ch;
+  margin-bottom: 1.5rem;
+}
+.text-game-details {
+  font-size: 3.5ch;
+  padding: 0;
+  margin: 0;
+}
+.coment-game-details {
+  font-size: 6ch;
+  margin: 1.5rem 0 .3rem 0;
+}
+.autor-comentario, .comentario {
+  color: black;
+  padding: 0;
+  margin: 0 0 0 1rem;
+}
+.comentario {
+  font-size: 5ch;
+}
+.autor-comentario {
+  font-size: 3ch;
+}
+.container-coment {
+  background-color: white;
+  max-width: 400px;
+  padding: 1rem 0;
+}
+.btn-game-details {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.btn-game-back {
+  border-top-color: black !important;
+  border-top-width: 1px !important;
+}
+.btn-game-coment {
+  bottom: 49px;
+  border-bottom-color: black !important;
+  border-bottom-width: 1px !important;
 }
