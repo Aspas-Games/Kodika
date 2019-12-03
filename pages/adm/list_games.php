@@ -1,4 +1,5 @@
 <?php
+include 'assets/includes/user_validation.php';
 include 'assets/includes/adm_validation.php';
 ?>
 <main>
@@ -22,7 +23,8 @@ include 'assets/includes/adm_validation.php';
           <th class="table-cell">Desenvolvedora</th>
           <th class="table-cell table-cell-odd">Data de Lançamento</th>
           <th class="table-cell">Idiomas</th>
-          <th class="table-cell table-cell-odd">Ação</th>
+          <th class="table-cell table-cell-odd">Gênero</th>
+          <th class="table-cell">Ação</th>
         </tr>
       </thead>
       <tbody>
@@ -42,8 +44,15 @@ include 'assets/includes/adm_validation.php';
               <td class="table-cell"><?php echo ($linha['desenvolvedora']);?></td>
               <td class="table-cell table-cell-odd"><?php echo ($linha['data_lancamento']);?></td>
               <td class="table-cell"><?php echo ($linha['idiomas']);?></td>
-              <td class="table-cell table-cell-odd">
-                <a class="a-edit" href="?page=editGame&idjogo=<?php echo ($linha['idjogo']);?>&titulo=<?php echo ($linha['titulo']);?>&descricao=<?php echo ($linha['descricao']);?>&desenvolvedora=<?php echo ($linha['desenvolvedora']);?>&datalancamento=<?php echo ($linha['data_lancamento']); ?>&idiomas=<?php echo ($linha['idiomas']); ?>&midia=<?php echo ($linha['midia']); ?>">
+              <td class="table-cell table-cell-odd"><?php
+              $idgenero = $linha['genero_idgenero'];
+              $queryGenre = sprintf("SELECT titulo FROM genero WHERE idgenero = '$idgenero'");
+              $dadosGenre = mysqli_query($conexao, $queryGenre) or die(mysql_error());
+              $linhaGenre = mysqli_fetch_assoc($dadosGenre);
+              echo $linhaGenre['titulo'];
+              ?></td>
+              <td class="table-cell">
+                <a class="a-edit" href="?page=editGame&idjogo=<?php echo ($linha['idjogo']);?>&titulo=<?php echo ($linha['titulo']);?>&descricao=<?php echo ($linha['descricao']);?>&desenvolvedora=<?php echo ($linha['desenvolvedora']);?>&datalancamento=<?php echo ($linha['data_lancamento']); ?>&idiomas=<?php echo ($linha['idiomas']); ?>&midia=<?php echo ($linha['midia']); ?>&genero=<?php echo ($linhaGenre['titulo']) ?>&idgenero=<?php echo ($linha['genero_idgenero']) ?>">
                   <button class="btn btn-primary btn-edit"></button>
                 </a>
                 <a class="a-edit" href="pages/form/delete_game.php?idjogo=<?php echo ($linha['idjogo']);?>">
@@ -56,7 +65,8 @@ include 'assets/includes/adm_validation.php';
         } else {
           ?>
           <tr>
-            <td colspan="7" class="status-kodika">Nenhum jogo cadastrado.</td>
+            <td colspan="9" class="status-kodika">Nenhum jogo cadastrado.</td>
+            <td style="display: none;" class="table-cell"></td>
             <td style="display: none;" class="table-cell"></td>
             <td style="display: none;" class="table-cell"></td>
             <td style="display: none;" class="table-cell"></td>

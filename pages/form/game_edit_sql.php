@@ -1,7 +1,7 @@
 <?php
-  include 'assets/includes/adm_validation.php';
+  include '../../assets/includes/user_validation.php';
+  include '../../assets/includes/adm_validation.php';
   include '../../assets/includes/connect.php';
-  session_start();
 
   if (isset($_SESSION['idjogo'])) {
     $titulo = $_POST['title'];

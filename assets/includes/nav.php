@@ -15,6 +15,7 @@
         <div class="dropdown">
           <a class="nav-link nav-item dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="" role="button">Perfil</a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item nav-link" href="index.php?page=userprofile">Meu Perfil</a>
             <a class="dropdown-item nav-link" href="assets/includes/logout.php">Logout</a>
           </div>
         </div>

@@ -1,4 +1,5 @@
 <?php
+include 'assets/includes/user_validation.php';
 include 'assets/includes/adm_validation.php';
 ?>
 <main>

@@ -12,6 +12,9 @@ switch ($get) {
   case 'home':
     include 'pages/home.php';
     break;
+  case 'userprofile':
+    include 'pages/user_profile.php';
+    break;
   case 'mygames':
     include 'pages/games.php';
     break;
@@ -33,6 +36,9 @@ switch ($get) {
     break;
   case 'editGame':
     include 'pages/adm/game_edit.php';
+    break;
+  case 'editGenre':
+    include 'pages/adm/genre_edit.php';
     break;
   //Páginas de login e registro
   case 'userreg':

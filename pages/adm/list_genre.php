@@ -1,4 +1,5 @@
 <?php
+include 'assets/includes/user_validation.php';
 include 'assets/includes/adm_validation.php';
 ?>
 <main>
@@ -35,10 +36,10 @@ include 'assets/includes/adm_validation.php';
               <td class="table-cell table-cell-odd"><?php echo ($linha['idgenero']);?></td>
               <td class="table-cell table-cell-even"><?php echo ($linha['titulo']);?></td>
               <td class="table-cell table-cell-odd">
-                <a class="a-edit" href="?pagina=editarGenero&id=<?php echo ($linha['idgenero']);?>&titulo=<?php echo ($linha['titulo']);?>">
+                <a class="a-edit" href="?page=editGenre&idgenero=<?php echo ($linha['idgenero']);?>&titulo=<?php echo ($linha['titulo']);?>">
                   <button class="btn btn-primary btn-edit"></button>
                 </a>
-                <a class="a-edit" href="excluir.php?id=<?php echo ($linha['idgenero']);?>">
+                <a class="a-edit" href="pages/form/genre_delete.php?idgenero=<?php echo ($linha['idgenero']);?>">
                   <button class="btn btn-primary btn-delete"></button>
                 </a>
               </td>

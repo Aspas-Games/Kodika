@@ -1,9 +1,9 @@
 <?php
+include 'assets/includes/user_validation.php';
 include 'assets/includes/adm_validation.php';
 ?>
 <main>
   <?php
-  session_start();
     if (isset($_GET['idjogo'])) {
       $_SESSION['idjogo'] = $_GET['idjogo'];
     }
@@ -36,6 +36,37 @@ include 'assets/includes/adm_validation.php';
       <div class="form-group form-kodika">
         <label for="media">Mídia</label>
         <input type="text" class="form-control" name="media" required value="<?php echo ($_GET['midia']); ?>">
+      </div>
+      <div class="form-group form-kodika">
+        <label for="genero">Gênero</label>
+        <select class="custom-select custom-select-lg mb-3" name="genero">
+          <option value="">Selecione um genêro:</option>
+          <?php
+          include 'assets/includes/connect.php';
+          $query = sprintf("SELECT * FROM genero");
+          $dados = mysqli_query($conexao, $query) or die(mysql_error());
+          $linha = mysqli_fetch_assoc($dados);
+          $total = mysqli_num_rows($dados);
+          if($total > 0) {
+            do {
+              if ($linha['idgenero'] == $_GET['idgenero']) {
+                ?>
+                <option value="<?php echo ($_GET['idgenero']) ?>" selected><?php echo ($_GET['genero']) ?></option>
+                <?php
+              } else {
+                ?>
+                <option value="<?php echo $linha['idgenero'] ?>"><?php echo $linha['titulo'] ?></option>
+                <?php
+            }
+            }while($linha = mysqli_fetch_assoc($dados));
+          } else {
+            ?>
+            <option value="">Nenhuma opção disponível.</option>
+            <?php
+          }
+          mysqli_free_result($dados);
+          ?>
+        </select>
       </div>
       <div class="form-group form-kodika">
         <input type="submit" value="Salvar alterações" class="btn btn-info btn-gamereg">
