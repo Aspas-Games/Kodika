@@ -359,3 +359,60 @@ input.btn.btn-info.btn-gamereg:hover, input.btn.btn-info.btn-gamereg:active {
   border-bottom-color: black !important;
   border-bottom-width: 1px !important;
 }
+.container-profile {
+  max-width: 1280px;
+  max-height: 300px;
+  margin: 2% auto 0 auto;
+  background-image: linear-gradient(to bottom right, rgb(87, 121, 139), rgb(142, 65, 113));
+  padding: 4% 15%;
+}
+.container-profile .col.row {
+  height: fit-content;
+  position: relative;
+}
+.container-edit-profile {
+  max-width: 1200px;
+  margin: 0 auto 2% auto;
+  padding: 1% 15%;
+  color: white;
+}
+.container-edit-profile h2 {
+  font-size: 7ch;
+}
+.container-edit-profile label {
+  font-size: 5ch;
+}
+.container-edit-profile input {
+  font-size: 5ch;
+}
+.avatar {
+  max-width: 232px;
+  height: 200px;
+}
+.nickname {
+  color: white;
+  font-size: 10ch;
+}
+.container-profile .col.fundo-pontos {
+  background-color: #d03b51;
+  position: absolute;
+  width: auto;
+  right: 230px;
+  top: 340px;
+}
+.pontuacao {
+  color: white;
+  font-size: 7ch;
+  text-align: right;
+}
+.btn-profile {
+  font-size: 5ch;
+  color: white;
+  border-radius: 0;
+  background-color: #17bd01;
+  border: none;
+}
+.btn-profile:active, .btn-profile:hover {
+  background-color: #17bd01 !important;
+  border: none;
+}

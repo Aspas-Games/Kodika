@@ -15,7 +15,7 @@ if ($total > 0) {
         <h3 class="game-title"><?php echo ($linha['titulo']);?></h3>
         <p class="game-dev">Desenvolvido por: <?php echo ($linha['desenvolvedora']);?></p>
         <p class="game-genre">Gênero: Ação, Aventura</p>
-        <a href="#"><button type="button" class="game-button">Jogar</button></a>
+        <a href="media/games/jimmyJimmy/index.html"><button type="button" class="game-button">Jogar</button></a>
       </div>
     </div>
     <?php
