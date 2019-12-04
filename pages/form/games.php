@@ -7,6 +7,11 @@ $total = mysqli_num_rows($dados);
 if ($total > 0) {
   do {
     ?>
+    <script>
+      function emBreve () {
+        alert("Em Breve!");
+      }
+    </script>
     <div class="game col">
       <a href="index.php?page=gamedetails">
         <img class="game-image" src="<?php echo ($linha['midia']);?>">
@@ -15,7 +20,19 @@ if ($total > 0) {
         <h3 class="game-title"><?php echo ($linha['titulo']);?></h3>
         <p class="game-dev">Desenvolvido por: <?php echo ($linha['desenvolvedora']);?></p>
         <p class="game-genre">Gênero: Ação, Aventura</p>
-        <a href="media/games/jimmyJimmy/index.html"><button type="button" class="game-button">Jogar</button></a>
+        <p class="game-genre">Lançamento: <?php
+        $datalancamento = strtotime($linha['data_lancamento']);
+        $datasistema = new DateTime();
+        $datasistema = $datasistema->format('U');
+
+        echo (date('d/m/Y', $datalancamento));
+
+        if ($datalancamento <= $datasistema) {
+          ?></p><a href="media/games/jimmyJimmy/index.php"><button type="button" class="game-button">Jogar</button></a><?php
+        } else {
+          ?></p><a href=""><button type="button" class="game-button" onclick="emBreve()">Jogar</button></a><?php
+        }
+        ?>
       </div>
     </div>
     <?php

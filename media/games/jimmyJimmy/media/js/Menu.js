@@ -218,9 +218,13 @@ function onTickLore() {
     this.cameras.main.fadeOut(500);
   }
   if (timerLoreControl == 16 && play == 1) {
+    this.tweens.add({
+        targets:  menuMusic,
+        volume:   0,
+        duration: 500
+    });
+  }
+  if (timerLoreControl == 16.5 && play == 1) {
     this.scene.start('playGame');
-    menuMusic.stop();
-    play = 0;
-    timerControl = 0;
   }
 }

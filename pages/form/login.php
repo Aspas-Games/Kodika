@@ -39,6 +39,12 @@ if (empty($_POST['user']) && empty($_POST['password'])) {
 
     if (!empty($linhaPass)) {
       //Senha correta
+
+      $queryUserId = sprintf("select idusuario from usuario where nick = '$user'");
+      $dadosUserId = mysqli_query($conexao, $queryUserId) or die(mysql_error());
+      $linhaUserId = mysqli_fetch_assoc($dadosUserId);
+
+      $_SESSION['idlogin'] = $linhaUserId['idusuario'];
       $_SESSION['login'] = $user;
       header('Location: ../../index.php?page=home');
     } else {

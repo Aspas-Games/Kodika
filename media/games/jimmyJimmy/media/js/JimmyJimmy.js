@@ -20,6 +20,7 @@ var direction = 0;
 var playerSpeed = 150;
 var itemHeight = 0;
 var keys;
+var xhttp = new XMLHttpRequest();
 
 class JimmyJimmy extends Phaser.Scene {
   constructor() {
@@ -210,6 +211,8 @@ class JimmyJimmy extends Phaser.Scene {
     gameOverExit.setInteractive();
     gameOverExit.on('pointerdown', ()=>{
       reset();
+      play = 0;
+      timerControl = 0;
       this.scene.start('bootGame');
     });
     gameOverExit.on('pointerover', ()=>{
@@ -294,6 +297,9 @@ class JimmyJimmy extends Phaser.Scene {
   }
 
   update () {
+    if (menuMusic.isPlaying) {
+      menuMusic.stop();
+    }
     //Movimenta personagem
     if (move.left.isDown) {
       jimmyJimmy.setVelocityX(-playerSpeed);
@@ -467,6 +473,12 @@ function onTick () {
     gameOverExit.setVisible(true);
     finalScore.setText('Score: ' + score);
     finalScore.setVisible(true);
+    //Salvar Pontuação
+
+    xhttp.open("GET", "../../../assets/includes/save_score.php?score="+score+"", true);
+    xhttp.send();
+
+    //Fim Salvar Pontuação
     stopMusic();
     musica7.play({
       loop: true,
