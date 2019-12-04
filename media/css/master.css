@@ -416,3 +416,20 @@ input.btn.btn-info.btn-gamereg:hover, input.btn.btn-info.btn-gamereg:active {
   background-color: #17bd01 !important;
   border: none;
 }
+.estrelas input[type=radio] {
+	display: none;
+}
+.estrelas label i.fa:before {
+	content: '\f005';
+	color: #FC0;
+  font-size: 5ch;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+	color: #CCC;
+}
+.comment-area {
+  font-size: 4ch;
+}
+.estrela-game-details {
+  height: 3rem;
+}

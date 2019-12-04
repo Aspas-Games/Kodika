@@ -10,17 +10,17 @@
           <a class="nav-link <?php if ($get == 'home') { echo 'current-page'; } ?>" href="index.php?page=home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=mygames">Meus Jogos</a>
+          <a class="nav-link <?php if ($get == 'mygames') { echo 'current-page'; } ?>" href="index.php?page=mygames">Meus Jogos</a>
         </li>
         <div class="dropdown">
-          <a class="nav-link nav-item dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="" role="button">Perfil</a>
+          <a class="nav-link <?php if ($get == 'userprofile') { echo 'current-page'; } ?> nav-item dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="" role="button">Perfil</a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item nav-link" href="index.php?page=userprofile">Meu Perfil</a>
             <a class="dropdown-item nav-link" href="assets/includes/logout.php">Logout</a>
           </div>
         </div>
         <div class="dropdown">
-          <a class="nav-link nav-item dropdown-toggle <?php switch ($get) { case 'gamelist': case 'genrelist': case 'gamereg': case 'genrereg': case 'editgame': echo 'current-page'; } ?>" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="" role="button">Adm</a>
+          <a class="nav-link nav-item dropdown-toggle <?php switch ($get) { case 'gamelist': case 'genrelist': case 'gamereg': case 'genrereg': case 'editGame': case 'editGenre': echo 'current-page'; } ?>" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="" role="button">Adm</a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item nav-link" href="index.php?page=gamelist">Jogos Cadastrados</a>
             <a class="dropdown-item nav-link" href="index.php?page=genrelist">Gêneros Cadastrados</a>

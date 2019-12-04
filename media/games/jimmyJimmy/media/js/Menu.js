@@ -5,6 +5,7 @@ var playButton;
 var menuMusic;
 var timerControl = 0;
 var segaAspas;
+var aspasSega;
 var timerIntro;
 var timerLoreControl = 0;
 var timerLore;
@@ -28,6 +29,7 @@ class Menu extends Phaser.Scene {
       this.load.image('lore1', 'media/sprites/intro/002_lore_1.jpg');
       this.load.image('lore2', 'media/sprites/intro/003_lore_2.jpg');
       this.load.image('lore3', 'media/sprites/intro/004_lore_3.jpg');
+      this.load.audio('aspasSega', 'media/audio/aspas.mp3');
       this.load.spritesheet('jimmy', 'media/sprites/Menu/000_menu_jimmy.png',{
         frameWidth: 180,
         frameHeight: 233
@@ -157,6 +159,8 @@ class Menu extends Phaser.Scene {
 
     menuMusic = this.sound.add('trilha');
     segaAspas = this.add.image(300, 240, 'aspasIntro');
+    aspasSega = this.sound.add('aspasSega');
+    aspasSega.play();
 
     loreImage1 = this.add.image(300,240, 'lore1').setVisible(false);
     loreImage2 = this.add.image(300,240, 'lore2').setVisible(false);
@@ -181,12 +185,12 @@ class Menu extends Phaser.Scene {
 
 function onTickIntro() {
   timerControl += 0.5;
-  if (timerControl == 2.5) {
+  if (timerControl == 3.5) {
     this.cameras.main.fadeOut(500);
     segaAspas.setVisible(false);
     this.cameras.main.fadeIn(500);
   }
-  if (timerControl == 2) {
+  if (timerControl == 3) {
     menuMusic.play({
      loop: true
     });

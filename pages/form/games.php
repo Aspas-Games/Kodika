@@ -13,7 +13,7 @@ if ($total > 0) {
       }
     </script>
     <div class="game col">
-      <a href="index.php?page=gamedetails">
+      <a href="index.php?page=gamedetails&idjogo=<?php echo ($linha['idjogo']); ?>">
         <img class="game-image" src="<?php echo ($linha['midia']);?>">
       </a>
       <div class="game-bottom">
