@@ -3,6 +3,7 @@
     <head>
         <title>Jimmy Jimmy</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="../../img/favicon.png"/>
         <link rel="stylesheet" href="../../css/reset.css">
         <link rel="stylesheet" href="../../css/jimmy.css">
         <script type="text/javascript" src="media/js/phaser.min.js"></script>

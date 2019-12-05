@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="media/css/bootstrap.css">
     <link rel="stylesheet" href="media/css/datatables.css"/>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="media/img/favicon.png"/>
     <link rel="stylesheet" href="media/css/master.css">
     <script src="media/js/jquery-3.4.1.min.js"></script>
     <script src="media/js/popper.min.js"></script>

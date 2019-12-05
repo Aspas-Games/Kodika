@@ -2,6 +2,7 @@ var jimmyFall;
 var jimmyYSpeed = -0.3;
 var jimmyXSpeed = -0.1;
 var playButton;
+var exitButton;
 var menuMusic;
 var timerControl = 0;
 var segaAspas;
@@ -25,6 +26,7 @@ class Menu extends Phaser.Scene {
       this.load.image('aspasIntro', 'media/sprites/intro/001_aspas_logo.jpg');
       this.load.image('jimmyLogo', 'media/sprites/Menu/000_menu_logo.png');
       this.load.image('jogar', 'media/sprites/Menu/000_menu_botao_jogar.png');
+      this.load.image('sair', 'media/sprites/Menu/000_menu_botao_sair.png');
       this.load.image('aspas', 'media/sprites/Menu/000_menu_aspas.png');
       this.load.image('lore1', 'media/sprites/intro/002_lore_1.jpg');
       this.load.image('lore2', 'media/sprites/intro/003_lore_2.jpg');
@@ -146,6 +148,15 @@ class Menu extends Phaser.Scene {
       play = 1;
     })
     playButton.on('pointerover', ()=>{
+      buttonSound.play();
+    })
+    exitButton = this.add.image(165, 375, 'sair');
+    exitButton.setInteractive();
+    buttonSound = this.sound.add('btnSound');
+    exitButton.on('pointerdown', ()=>{
+      window.history.back();
+    })
+    exitButton.on('pointerover', ()=>{
       buttonSound.play();
     })
     jimmyFall = this.add.sprite(450, 240, 'jimmy');
